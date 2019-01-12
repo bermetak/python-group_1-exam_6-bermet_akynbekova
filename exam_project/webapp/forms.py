@@ -5,7 +5,7 @@ from webapp.models import UserInfo, Post
 class UserForm(forms.ModelForm):
     class Meta:
         model = UserInfo
-        exclude = []
+        exclude = ['user']
 
 
 class PostForm(forms.ModelForm):

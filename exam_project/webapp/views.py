@@ -17,15 +17,17 @@ class UserDetailView(LoginRequiredMixin, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['post'] = Post.objects.get(pk=self.kwargs.get('pk'))
+        context['post'] = Post.objects.all().order_by('-date')
         return context
 
-    def form_valid(self, form):
-        form.instance.order = Post.objects.get(pk=self.kwargs.get('pk'))
-        return super().form_valid(form)
+class UserEditView(LoginRequiredMixin, UpdateView):
+    model = UserInfo
+    template_name = 'user_edit.html'
+    form_class = UserForm
 
     def get_success_url(self):
-        return reverse('webapp:user_detail', kwargs={'pk': self.object.user.pk})
+        return reverse('webapp:user_detail', kwargs={'pk': self.object.pk})
+
 
 class PostListView(LoginRequiredMixin, ListView):
     model = Post
