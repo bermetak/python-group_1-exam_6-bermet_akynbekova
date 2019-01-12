@@ -38,3 +38,30 @@ class PostListView(LoginRequiredMixin, ListView):
 class PostDetailView(LoginRequiredMixin, DetailView):
     model = Post
     template_name = 'post_detail.html'
+
+class PostCreateView(LoginRequiredMixin, CreateView):
+    model = Post
+    template_name = 'post_create.html'
+    form_class = PostForm
+
+    def form_valid(self, form):
+        form.instance.autor = self.request.user.info
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse('webapp:post_detail', kwargs={'pk': self.object.pk})
+
+class PostEditView(LoginRequiredMixin, UpdateView):
+    model = Post
+    template_name = 'post_edit.html'
+    form_class = PostForm
+
+    def get_success_url(self):
+        return reverse('webapp:post_detail', kwargs={'pk': self.object.pk})
+
+class PostDeleteView(LoginRequiredMixin, DeleteView):
+    model = Post
+    template_name = 'post_delete.html'
+
+    def get_success_url(self):
+        return reverse('webapp:post_list')

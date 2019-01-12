@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    {{ userinfo.user.first_name }} {{ userinfo.user.last_name }}
+    Личный кабинет
 {% endblock %}
 {% block content %}
     <br>
-    <h2>Пользователь {{ userinfo.user.first_name }} {{ userinfo.user.last_name }}</h2>
+    <h2>Личный кабинет пользователя {{ userinfo.user.first_name }} {{ userinfo.user.last_name }}</h2>
     <br>
     <img src="{{ userinfo.avatar.url }}" alt="">
 Информация:

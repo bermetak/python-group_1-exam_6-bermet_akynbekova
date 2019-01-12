@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Редактировать публикацию
+{% endblock %}
+{% block content %}
+    <br>
+    <h2>{{ post.title }}</h2>
+    <br>
+        <form action="{% url 'webapp:post_edit' post.pk %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </form>
+{% endblock %}
