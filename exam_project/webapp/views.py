@@ -1,5 +1,5 @@
 from django.views.generic import DetailView, CreateView, UpdateView, View, DeleteView, ListView, FormView
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, Http404
 from django.urls import reverse, reverse_lazy
 from django.http import HttpResponseRedirect, JsonResponse
 from webapp.models import UserInfo, Post
@@ -24,6 +24,14 @@ class UserEditView(LoginRequiredMixin, UpdateView):
     model = UserInfo
     template_name = 'user_edit.html'
     form_class = UserForm
+
+    # def dispatch(self, request, *args, **kwargs):
+    #     print (request, args, kwargs)
+    #     if request.user == self.kwargs['pk']:
+    #         return super(UserEditView, self).dispatch(request, *args, **kwargs)
+    #     else:
+    #         raise Http404
+
 
     def get_success_url(self):
         return reverse('webapp:user_detail', kwargs={'pk': self.object.pk})

@@ -1,0 +1,564 @@
+[
+{
+  "model": "webapp.post",
+  "pk": 6,
+  "fields": {
+    "autor": 2,
+    "title": "\u041f\u043e\u0441\u04422",
+    "text": "\u0412\u0442\u043e\u0440\u043e\u0439 \u043f\u043e\u0441\u0442",
+    "date": "2019-01-12"
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 7,
+  "fields": {
+    "autor": 1,
+    "title": "\u041f\u043e\u0441\u04421",
+    "text": "\u041f\u0435\u0440\u0432\u044b\u0439 \u043f\u043e\u0441\u0442",
+    "date": "2019-01-12"
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 8,
+  "fields": {
+    "autor": 3,
+    "title": "\u041f\u043e\u0441\u04423",
+    "text": "\u0422\u0440\u0435\u0442\u0438\u0439 \u043f\u043e\u0441\u0442",
+    "date": "2019-01-12"
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 9,
+  "fields": {
+    "autor": 1,
+    "title": "\u0412\u0442\u043e\u0440\u043e\u0439 \u043f\u043e\u0441\u0442",
+    "text": "\u041f\u043e\u0441\u0442 \u043d\u043e\u043c\u0435\u0440 \u0434\u0432\u0430",
+    "date": "2019-01-12"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "add_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "change_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "delete_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "view_userinfo"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$prz4Rknc1Kj8$MpWElzLLgsIGSKzMqZMdgiAbbMxieClKJK4U6TtCags=",
+    "last_login": "2019-01-12T09:38:26Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "admin",
+    "last_name": "admin",
+    "email": "admin@ad.min",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:38:07Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$xnrwFvOWOs6w$M4Mdz88giSkjFNEoZoGjskanaOyeHTWi7d65PrceRGE=",
+    "last_login": "2019-01-12T11:47:33.007Z",
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "user1",
+    "last_name": "user1",
+    "email": "user1@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T09:08:21Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$1wCGFWGmcMj7$OCYYFntqLjU5opWlV3ymQ9iY6CIdakZijezufcZVT3E=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user2",
+    "first_name": "user2",
+    "last_name": "user2",
+    "email": "user2@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T09:09:11Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$6Rg5LO7mCaSI$bNIGTbPU0mKJRbjmJyjkicP9A9Uv+4gXO0F7AWj0+3Y=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user3",
+    "first_name": "user3",
+    "last_name": "user3",
+    "email": "user3@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T09:09:42Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "user1"
+    ],
+    "phone": "123456",
+    "avatar": "1.jpg",
+    "friends": [
+      [
+        "user2"
+      ],
+      [
+        "user3"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "user2"
+    ],
+    "phone": "12345678",
+    "avatar": "1_hZmtvTg.jpg",
+    "friends": [
+      [
+        "user2"
+      ],
+      [
+        "user3"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "user3"
+    ],
+    "phone": "654321",
+    "avatar": "1_3h3RwaU.jpg",
+    "friends": [
+      [
+        "user2"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "phone": "123456",
+    "avatar": "3.jpeg",
+    "friends": []
+  }
+}
+]

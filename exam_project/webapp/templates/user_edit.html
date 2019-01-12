@@ -4,10 +4,13 @@
     Личный кабинет
 {% endblock %}
 {% block content %}
+
 <h2>Редактировать личный кабинет</h2>
     <form action="{% url 'webapp:user_edit' user.pk %}" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="btn btn-primary">Сохранить</button>
     </form>
+
+
 {% endblock %}

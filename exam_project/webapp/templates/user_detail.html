@@ -11,7 +11,7 @@
     <img src="{{ userinfo.avatar.url }}" alt="">
     <br><br>
         <h2 class="d-inline">{{ userinfo.user.first_name }} {{ userinfo.user.last_name }}</h2>
-    {% if request.user == userinfo.user %}<a href="{% url 'webapp:user_edit' user.pk %}">Редактировать</a>{% endif %}
+    {% if request.user == userinfo.user %}<a href="{% url 'webapp:user_edit' userinfo.pk %}">Редактировать</a>{% endif %}
     <br>
         Почта: {{ userinfo.user.email }}
 
