@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ userinfo.user.first_name }} {{ userinfo.user.last_name }}
+{% endblock %}
+{% block content %}
+    <br>
+    <h2>Пользователь {{ userinfo.user.first_name }} {{ userinfo.user.last_name }}</h2>
+    <br>
+    <img src="{{ userinfo.avatar.url }}" alt="">
+Информация:
+{{ userinfo.phone }}<br>
+    {{ userinfo.user.email }}
+    Публикации:
+    {% for post in userinfo.post %}
+            <a href="#">
+        {{ post.title }}
+            </a>
+    {% endfor %}
+{% endblock %}

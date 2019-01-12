@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    Публикации
+{% endblock %}
+{% block content %}
+    <br>
+    <h2>Публикации</h2>
+    <br>
+    {% for post in post_list %}
+
+            <a href="{% url 'webapp:post_detail' post.pk %}">
+                <h3>{{ post.title }}</h3>
+            <p>{{ post.autor.user.first_name }} {{ post.autor.user.last_name }} at {{ post.date }}</p>
+            </a>
+    {% endfor %}
+{% endblock %}

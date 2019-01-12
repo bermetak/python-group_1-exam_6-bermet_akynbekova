@@ -1,4 +1,4 @@
-{% load bootstrap3 %}
+{% load bootstrap4 %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,9 +7,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
     <title>{% block title %}{% endblock %}</title>
-    {% bootstrap_css %}
-    {% bootstrap_javascript %}
     {% block styles %}{% endblock %}
 </head>
 <body>
@@ -28,22 +28,16 @@
                     <a href="{% url 'accounts:logout' %}" class="nav-link">Выход</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url '' %}" class="nav-link">Новости</a>
+                    <a href="#" class="nav-link">Новости</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url '' %}" class="nav-link">Пользователи</a>
+                    <a href="#" class="nav-link">Пользователи</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url '' %}" class="nav-link">Личный кабинет</a>
+                    <a href="#" class="nav-link">Личный кабинет</a>
                 </li>
                 {% block menu %}{% endblock %}
             {% else %}
-                <li class="nav-item">
-                    <a href="{% url '' %}" class="nav-link">Новости</a>
-                </li>
-                <li class="nav-item">
-                    <a href="{% url '' %}" class="nav-link">Пользователи</a>
-                </li>
                 <li class="nav-item">
                     <a href="{% url 'accounts:login' %}" class="nav-link">Вход</a>
                 </li>
