@@ -1,0 +1,66 @@
+{% load bootstrap3 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% block styles %}{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+
+            {% if request.user.is_authenticated %}
+                <li class="nav-item navbar-text">Привет, {{ request.user.username }}!</li>
+                <li class="nav-item">
+                    <a href="{% url 'accounts:logout' %}" class="nav-link">Выход</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url '' %}" class="nav-link">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url '' %}" class="nav-link">Пользователи</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url '' %}" class="nav-link">Личный кабинет</a>
+                </li>
+                {% block menu %}{% endblock %}
+            {% else %}
+                <li class="nav-item">
+                    <a href="{% url '' %}" class="nav-link">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url '' %}" class="nav-link">Пользователи</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'accounts:login' %}" class="nav-link">Вход</a>
+                </li>
+            {% endif %}
+
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+{% block scripts %}{% endblock %}
+
+</body>
+</html>
